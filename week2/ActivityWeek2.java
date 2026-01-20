@@ -4,7 +4,7 @@ public class ActivityWeek2 {
        int []theaterRow = new int[8];
 
       theaterRow[3] = 1;
-       int availableSeats = 0;
+        int availableSeats = 0;
     for (int i = 1; i < theaterRow.length; i++){
             System.out.println("Seat" + i +": " + theaterRow[i]);
         
@@ -14,5 +14,8 @@ public class ActivityWeek2 {
         }
              System.out.println("Available seats" );
     } 
+
     }
+    
 }
+![wit](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMWI4dXkyd3c2NGRxNXJzbDlzaTZnbDYyZG1wcDRzeDljc3gybHkwaSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fnuSiwXMTV3zmYDf6k/giphy.gif)

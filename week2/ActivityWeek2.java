@@ -1,11 +1,18 @@
+
 public class ActivityWeek2 {
     public static void main(String [] args){
-       int [] theater = new int[8];
-       theater[3] = 1;
-         for(int i = 0; i < theater.length; i++){
-            System.out.println(theater[i]);
-                System.out.printf("%-8s", theater[i]);
-            }
-            System.out.println();
+       int []theaterRow = new int[8];
+
+      theaterRow[3] = 1;
+       int availableSeats = 0;
+    for (int i = 1; i < theaterRow.length; i++){
+            System.out.println("Seat" + i +": " + theaterRow[i]);
+        
+            if( theaterRow [i] == 0){
+            availableSeats++;
+        
+        }
+             System.out.println("Available seats" );
+    } 
     }
 }

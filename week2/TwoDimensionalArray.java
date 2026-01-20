@@ -1,5 +1,6 @@
 
 
+
 public class TwoDimensionalArray {
     public static void main(){
        String [][] clothColors = new String[2][3];

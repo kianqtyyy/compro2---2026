@@ -1,0 +1,10 @@
+{
+  "subjects": [
+    {
+      "name": "math",
+      "prelim": 90.0,
+      "midterm": 90.0,
+      "finals": 90.0
+    }
+  ]
+}

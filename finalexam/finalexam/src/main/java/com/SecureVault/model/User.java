@@ -9,7 +9,17 @@ public class User {
 
     public User(String username, String password) {
         this.username = username;
-        setPassword(password);
+
+        if(password.length() < 8 ||
+           !password.matches(".*[A-Z].*") ||
+           !password.matches(".*\\d.*")) {
+
+            throw new IllegalArgumentException(
+                "Password must contain uppercase and number."
+            );
+        }
+
+        this.password = password;
     }
 
     public String getUsername() {

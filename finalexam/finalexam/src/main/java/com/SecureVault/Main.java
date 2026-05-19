@@ -53,4 +53,14 @@ public class Main {
             throw new UnsupportedOperationException("Not supported yet.");
         }
     }
+
+    private static class FileService {
+
+        public static void save(java.util.List<Expense> items, String fileName)
+                throws java.io.IOException {
+            java.nio.file.Files.writeString(
+                    java.nio.file.Path.of(fileName),
+                    items.toString());
+        }
+    }
 }

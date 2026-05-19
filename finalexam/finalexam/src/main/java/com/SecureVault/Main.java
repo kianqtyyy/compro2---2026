@@ -1,10 +1,11 @@
 package com.SecureVault;
 
-import com.securevault.model.*;
-import com.securevault.repository.*;
-import com.securevault.service.*;
-
 import java.time.LocalDate;
+
+import com.SecureVault.model.Bill;
+import com.SecureVault.model.Expense;
+import com.SecureVault.repository.InMemoryRepository;
+import com.SecureVault.repository.Repository;
 
 public class Main {
 
@@ -41,5 +42,15 @@ public class Main {
         System.out.println(
                 "Data saved successfully."
         );
+    }
+
+    private static class FinanceService {
+
+        public FinanceService(Repository<Expense> expenseRepo, Repository<Bill> billRepo) {
+        }
+
+        private void showUpcomingBills() {
+            throw new UnsupportedOperationException("Not supported yet.");
+        }
     }
 }
